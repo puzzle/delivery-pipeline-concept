@@ -15,3 +15,5 @@ A delivery pipeline provides fast feedback on every stage with growing maturity 
 ## Stages
 
 Stages of the delivery pipeline.
+
+* [build and unit tests](stages/build/build.md)
