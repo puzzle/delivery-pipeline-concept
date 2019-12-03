@@ -17,7 +17,7 @@ This is the first time the application will be deployed into an environment with
 
 ## Stage Output
 
-Passing this step means that the deployable artefact from the [packaging stage](../packaging/README.md) is ready to be tested from a tester.
+Passing this step means that the deployable artefact from the [packaging stage](../02-packaging/README.md) is ready to be tested from a tester.
 
 The output will be:
 
