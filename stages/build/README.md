@@ -32,6 +32,8 @@ Failing unit tests will not stop the pipeline.
 
 Any non passing test must change the status of this step to unstable.
 
+Testing guidelines: [test pyramid](../../best-practices.md#testing)
+
 ### static analysis
 
 * static code analysis
