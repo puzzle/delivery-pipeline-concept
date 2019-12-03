@@ -4,7 +4,8 @@
 
 ![Build Stage](images/build.svg)
 
-This stage contains the setup for a delivery pipeline. Normally you will find these elements within the source build
+This stage contains the classic application build.
+It is enriched with further analysis and checks.
 
 ## Steps
 
@@ -33,25 +34,28 @@ Any non passing test must change the status of this step to unstable.
 
 ### static analysis
 
+* static code analysis
 * Static Application Security Testing (SAST)
-  * Source Code Analysis Tools: https://www.owasp.org/index.php/Source_Code_Analysis_Tools
-  * (OWASP)? SonarQube project covers 20+  programming languages
-    * Brakeman for Ruby for example is ok too
+
+More details and tool suggestions: [static-analysis.md](static-analysis.md)
 
 ### dependency checks
 
 * check dependencies for updates
-* OWASP Dependency Check
-* licence checks
+* check dependencies for security problems
+* license checks
+
+More details and tool suggestions: [dependency-checks.md](dependency-checks.md)
 
 ### security checks
 
 * Dynamic Application Security Testing (DAST)
-  * OWASP ZAP (Zed Attack Proxy)
+
+More details and tool suggestions: [security-checks.md](security-checks.md)
 
 ### artefact generation
 
-Packaging of the artifact.
+Packaging of the artefact.
 
 ## Stage Output
 
