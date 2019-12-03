@@ -16,4 +16,12 @@ A delivery pipeline provides fast feedback on every stage with growing maturity 
 
 Stages of the delivery pipeline.
 
-* [build and unit tests](stages/build/build.md)
+1. [build and unit tests](stages/build/build.md)
+2. [packaging](stages/packaging/packaging.md)
+3. [automated acceptance tests](stages/automated-tests/automated-tests.md)
+4. [manual tests](stages/manual-tests/manual-tests.md)
+5. [release](stages/release/release.md)
+
+Each individual stage provides fast feedback to the developer.
+
+The artefact gains on maturity passing the stages from top to bottom.
