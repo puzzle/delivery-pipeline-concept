@@ -29,6 +29,7 @@ The artefact gains on maturity passing the stages from top to bottom.
 ## Additional
 
 * [best practices](best-practices.md)
+* [Glossary](glossary.md)
 
 ## About this repository
 
