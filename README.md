@@ -19,8 +19,8 @@ Stages of the delivery pipeline.
 1. [build and unit tests](stages/01-build/README.md)
 2. [packaging](stages/02-packaging/README.md)
 3. [automated tests](stages/03-automated-tests/README.md)
-4. [manual tests](stages/manual-tests/README.md)
-5. [release](stages/release/README.md)
+4. [manual tests](stages/04-manual-tests/README.md)
+5. [release](stages/05-release/README.md)
 
 Each individual stage provides fast feedback to the developer.
 
