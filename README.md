@@ -16,7 +16,7 @@ A delivery pipeline provides fast feedback on every stage with growing maturity 
 
 Stages of the delivery pipeline.
 
-1. [build and unit tests](stages/build/README.md)
+1. [build and unit tests](stages/01-build/README.md)
 2. [packaging](stages/packaging/README.md)
 3. [automated tests](stages/automated-tests/README.md)
 4. [manual tests](stages/manual-tests/README.md)
