@@ -18,13 +18,17 @@ Stages of the delivery pipeline.
 
 1. [build and unit tests](stages/build/README.md)
 2. [packaging](stages/packaging/README.md)
-3. [automated acceptance tests](stages/automated-tests/README.md)
+3. [automated tests](stages/automated-tests/README.md)
 4. [manual tests](stages/manual-tests/README.md)
 5. [release](stages/release/README.md)
 
 Each individual stage provides fast feedback to the developer.
 
 The artefact gains on maturity passing the stages from top to bottom.
+
+## Additional
+
+* [best practices](best-practices.md)
 
 ## About this repository
 

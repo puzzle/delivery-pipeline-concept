@@ -9,7 +9,7 @@ Packaging of the application artefact to be deployed.
 * take newest Baseimage for your Container
 * run software and library updates
 * only install really needed software and libraries for running the application
-* Container build best practices: [Container Build](../../best-practices.md#container_build)
+* Container build best practices: [Container Build](../../best-practices.md#container-build)
 
 ### Hardening the container
 

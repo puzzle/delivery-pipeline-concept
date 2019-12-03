@@ -4,8 +4,7 @@
 
 ![Packaging Stage](images/packaging.svg)
 
-This stage contains the classic application build.
-It is enriched with further analysis and checks.
+This stage contains packages the application for the deployment.
 
 ## Steps
 
