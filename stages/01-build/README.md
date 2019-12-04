@@ -28,9 +28,11 @@ Any build failure must stop the pipeline. This to provide fast feedback.
 * collect test results
 * collect test coverage
 
-Failing unit tests will not stop the pipeline.
-
+Failing unit tests will not stop the execution of the step.
+This to collect the test results of all tests at the end of the step.
 Any non passing test must change the status of this step to unstable.
+
+Stop the pipeline if the step status returns unstable (failing unit tests).
 
 Testing guidelines: [test pyramid](../../best-practices.md#testing)
 
