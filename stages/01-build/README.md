@@ -22,6 +22,8 @@ It is enriched with further analysis and checks.
 
 Any build failure must stop the pipeline. This to provide fast feedback.
 
+More details and tool suggestions: [build.md](build.md)
+
 ### unit tests
 
 * run all unit tests
