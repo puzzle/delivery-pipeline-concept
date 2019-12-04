@@ -38,6 +38,8 @@ Testing guidelines: [test pyramid](../../best-practices.md#testing)
 
 ### static analysis
 
+Static code analysis (SCA) of the software source code.
+
 * static code analysis
 * Static Application Security Testing (SAST)
 
