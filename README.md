@@ -31,6 +31,16 @@ The artefact gains on maturity passing the stages from top to bottom.
 * [best practices](best-practices.md)
 * [Glossary](glossary.md)
 
+## open points
+
+* monitoring integration
+* pipeline status
+* container security
+* list technologies used in a container (baseimage and self installed)
+* environment config
+  * config itself
+  * credentials
+
 ## About this repository
 
 ### images
