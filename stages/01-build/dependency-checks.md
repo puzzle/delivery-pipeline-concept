@@ -138,15 +138,17 @@ The following example:
  <ul>
   <li>scans the folders <i>app</i> and <i>api</i> of the repository</li>
   <li>saves the reports in all available formats</li>
-  <li>takes dependency-check-suppression.xml suppress false positives</li>
-  <li>lets the pipeline fail with a CVSS score higher than 3</li>
+  <li>sets <i>OWASP Dependency Check</i> as project name</li>
+  <li>saves the reports to the folder <i>report</i></li>
+  <li>takes dependency-check-suppression.xml to suppress false positives</li>
+  <li>lets the pipeline fail when a CVSS score higher than 3 is reached</li>
   <li>exludes the folders matching the <i>pathPattern</i> from the scan</li>
 </ul> 
 </p>
 </details>
 
 ```Bash
-sh "dependency-check.sh --scan app --scan api --format 'ALL' --project 'OWASP Dependency Check' --out report --suppression dependency-check-suppression.xml --failOnCVSS 3 --exclude pathPattern --enableExperimental"
+sh "dependency-check.sh --scan app --scan api --format 'ALL' --project 'OWASP Dependency Check' --out report --suppression dependency-check-suppression.xml --failOnCVSS 3 --exclude pathPattern"
 ```
 For more information about command line arguments, see [OWASP Dependency Check documentation](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html).
 
