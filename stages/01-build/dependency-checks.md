@@ -38,7 +38,7 @@ False positives may occur. They can be suppressed very easily. See [OWASP Depend
 
 ### supported languages
 
-OWASP Dependency Checks supports many languages. Some of them are experimental. Use the command line argument <i>--enableExperimental</i>.
+OWASP Dependency Checks supports many languages. Some of them are experimental. Use the command line argument *--enableExperimental*.
 See [OWASP Dependency Check documentation](https://jeremylong.github.io/DependencyCheck/analyzers/index.html).
 
 ### Dependency Check implementations
@@ -49,7 +49,8 @@ Declarative Jenkins Pipeline using [Dependency-Check Jenkins Plugin](https://git
 
 <details><summary>pipeline Groovy script</summary>
 <p>
-Update the DEPENDENCY_CHECK_TOOL to the version installed, see <i>Global Tool Configuration</i>.
+Update the DEPENDENCY_CHECK_TOOL to the version installed, see <i>Global Tool Configuration</i>.<br/>
+See examples for the ARGUMENTS below at <a href="#dependency-check-examples">Dependency Check Examples</a>
 
 ```Groovy
 pipeline {
@@ -102,6 +103,7 @@ containing the [OWASP Dependency Check step](https://github.com/puzzle/jenkins-p
 
 <details><summary>pipeline Groovy script</summary>
 <p>
+See examples for the ARGUMENTS below at <a href="#dependency-check-examples">Dependency Check Examples</a>
 
 ```Groovy
 @Library('jenkins-pipeline-shared-libraries') _
@@ -118,7 +120,7 @@ pipeline {
         }
         stage('Dependency Check') {
             steps {
-                owaspDependencyCheck "app", "api", "EXTRA ARGUMENTS"
+                owaspDependencyCheck "folder1", "folder2", "EXTRA ARGUMENTS"
             }
         }
     }
@@ -132,44 +134,34 @@ pipeline {
 
 #### Dependency Check Command Line Examples
 
-<details><summary>Command Line Example</summary>
-<p>
-The following example:
- <ul>
-  <li>scans the folders <i>app</i> and <i>api</i> of the repository</li>
-  <li>saves the reports in all available formats</li>
-  <li>sets <i>OWASP Dependency Check</i> as project name</li>
-  <li>saves the reports to the folder <i>report</i></li>
-  <li>takes dependency-check-suppression.xml to suppress false positives</li>
-  <li>lets the pipeline fail when a CVSS score higher than 3 is reached</li>
-  <li>exludes the folders matching the <i>pathPattern</i> from the scan</li>
-</ul> 
-</p>
-</details>
-
-```Bash
-sh "dependency-check.sh --scan app --scan api --format 'ALL' --project 'OWASP Dependency Check' --out report --suppression dependency-check-suppression.xml --failOnCVSS 3 --exclude pathPattern"
+```bash
+dependency-check.sh --scan app --scan api --format 'ALL' --project 'OWASP Dependency Check' --out report --suppression dependency-check-suppression.xml --failOnCVSS 3 --exclude pathPattern
 ```
+
+This example:
+
+* scans the folders *app* and *api* of the repository
+* saves the reports in all available formats
+* sets *OWASP Dependency Check* as project name
+* saves the reports to the folder *report*
+* takes dependency-check-suppression.xml to suppress false positives
+* lets the pipeline fail when a CVSS score higher than 3 is reached
+* exludes the folders matching the *pathPattern* from the scan
+
 For more information about command line arguments, see [OWASP Dependency Check documentation](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html).
 
 #### Shared Library Examples
-
-<details><summary>Shared Library Example</summary>
-<p>
-The following example calls the owaspDependencyCheck from the Shared Library and 
-<ul>
-  <li>scans the folders <i>app</i> and <i>api</i> of the repository</li>
-  <li>uses the installed tool <i>owasp-dependency-check-5.2.4</i></li>
-  <li>enables the experimental analyzers for broader language support</i></li>
-  <li>lets the pipeline fail when a CVSS score higher than 3 is reached</li>
-</ul> 
-</p>
-</details>
 
 ```Groovy
 owaspDependencyCheck "app", "api", tool: "owasp-dependency-check-5.2.4", extraArgs: "--enableExperimental --failOnCVSS 3"
 ```
 
+This example calls the owaspDependencyCheck from the Shared Library and 
+
+* scans the folders *app* and *api* of the repository
+* uses the installed tool *owasp-dependency-check-5.2.4*
+* enables the experimental analyzers for broader language support*
+* lets the pipeline fail when a CVSS score higher than 3 is reached
 
 ## license checks
 
