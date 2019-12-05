@@ -161,12 +161,13 @@ The following example calls the owaspDependencyCheck from the Shared Library and
   <li>scans the folders <i>app</i> and <i>api</i> of the repository</li>
   <li>uses the installed tool <i>owasp-dependency-check-5.2.4</i></li>
   <li>enables the experimental analyzers for broader language support</i></li>
+  <li>lets the pipeline fail when a CVSS score higher than 3 is reached</li>
 </ul> 
 </p>
 </details>
 
 ```Groovy
-owaspDependencyCheck "app", "api", tool: "owasp-dependency-check-5.2.4", extraArgs: "--enableExperimental"
+owaspDependencyCheck "app", "api", tool: "owasp-dependency-check-5.2.4", extraArgs: "--enableExperimental --failOnCVSS 3"
 ```
 
 
