@@ -9,12 +9,12 @@ It is enriched with further analysis and checks.
 
 ## Steps
 
-1. code compilation and build
-2. unit tests
-3. static analysis
-4. dependency checks
-5. security checks
-6. artefact generation
+1. [code compilation and build](#code-compilation-and-build)
+2. [unit tests](#unit-tests)
+3. [static analysis](#static-analysis)
+4. [dependency checks](#dependency-checks)
+5. [security checks](#security-checks)
+6. [artefact generation](#artefact-generation)
 
 ### code compilation and build
 
