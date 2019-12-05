@@ -118,7 +118,7 @@ pipeline {
         }
         stage('Dependency Check') {
             steps {
-                owaspDependencyCheck "app", "api", tool: "owasp-dependency-check-5.2.4", extraArgs: "--enableExperimental"
+                owaspDependencyCheck "app", "api", "EXTRA ARGUMENTS"
             }
         }
     }
