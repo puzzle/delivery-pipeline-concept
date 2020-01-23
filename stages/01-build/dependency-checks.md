@@ -46,6 +46,15 @@ For further information or a sample suppression file see [OWASP Dependency Check
 OWASP Dependency Check supports many languages. Some of them are experimental. Use the command line argument *--enableExperimental* if you want to scan a language that is marked as experimental.
 See [OWASP Dependency Check documentation section "Analyzers"](https://jeremylong.github.io/DependencyCheck/analyzers/index.html) to check if your language is experimental or not.
 
+### CVSS score
+
+The pipeline can be configured to fail when a certain CVSS score is exceeded. The CVSSv3 is used to evaluate the CVSS. See [Wikipedia](https://en.wikipedia.org/wiki/Common_Vulnerability_Scoring_System) or [nvd.nist.gov](https://nvd.nist.gov/vuln-metrics/cvss) for more information.
+
+### reports
+
+With the format option set to 'ALL' we generate XML, CSV, HTML, JSON and XML files.  
+A sample HTML report can be found [here](https://jeremylong.github.io/DependencyCheck/general/SampleReport.html).
+
 ### Dependency Check implementations
 
 There are a Jenkins Pipeline Shared Library and an official Dependency-Check Jenkins Plugin available:
@@ -146,7 +155,7 @@ pipeline {
 #### Shared Library Examples
 
 ```Groovy
-owaspDependencyCheck "app", "api", tool: "owasp-dependency-check-5.2.4", extraArgs: "--enableExperimental --failOnCVSS 7 --project 'My Named Project'"
+owaspDependencyCheck "app", "api", tool: "owasp-dependency-check-5.2.4", extraArgs: "--enableExperimental --failOnCVSS 5 --project 'My Named Project'"
 ```
 
 This example calls the owaspDependencyCheck from the Shared Library and
@@ -154,7 +163,7 @@ This example calls the owaspDependencyCheck from the Shared Library and
 * scans the folders *app* and *api* of the repository
 * uses the installed tool *owasp-dependency-check-5.2.4*. The version must match as it's part of the tool's name.
 * enables the *experimental analyzers* for broader language support (also see section [Supported Languages](#supported-languages))
-* lets the pipeline fail when a CVSS score higher than 5 is reached
+* lets the pipeline fail when a [CVSS](https://en.wikipedia.org/wiki/Common_Vulnerability_Scoring_System) score higher than 5 is reached (CVSSv3 score is used here).
 * sets the *project name* to 'My Named Project'. This project name is displayed as a heading in the report.
 * sets the output format implicitly to *--format 'ALL'* so that xml, csv, html, json and xml files are generated
 
