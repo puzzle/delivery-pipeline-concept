@@ -50,6 +50,8 @@ See [OWASP Dependency Check documentation section "Analyzers"](https://jeremylon
 
 The pipeline can be configured to fail when a certain CVSS score is exceeded. The CVSSv3 is used to evaluate the CVSS. See [Wikipedia](https://en.wikipedia.org/wiki/Common_Vulnerability_Scoring_System) or [nvd.nist.gov](https://nvd.nist.gov/vuln-metrics/cvss) for more information.
 
+In the [examples below](#dependency-check-examples) we let the pipeline fail when a CVSS score of 5 is reached (MEDIUM). Practice will show which thresholds work.
+
 ### reports
 
 With the format option set to 'ALL' we generate XML, CSV, HTML, JSON and XML files.  
