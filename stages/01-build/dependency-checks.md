@@ -157,13 +157,14 @@ pipeline {
 #### Shared Library Examples
 
 ```Groovy
-owaspDependencyCheck "app", "api", tool: "owasp-dependency-check-5.2.4", extraArgs: "--enableExperimental --failOnCVSS 5 --project 'My Named Project'"
+owaspDependencyCheck "app", "api", tool: "owasp-dependency-check-5.2.4", extraArgs: "--suppression 'dependency-check-suppression.xml' --enableExperimental --failOnCVSS 5 --project 'My Named Project'"
 ```
 
 This example calls the owaspDependencyCheck from the Shared Library and
 
 * scans the folders *app* and *api* of the repository
 * uses the installed tool *owasp-dependency-check-5.2.4*. The version must match as it's part of the tool's name.
+* adds the *suppression file dependency-check-suppression.xml* to suppress false positives (also see section [false positives](#false positives)) 
 * enables the *experimental analyzers* for broader language support (also see section [Supported Languages](#supported-languages))
 * lets the pipeline fail when a [CVSS](https://en.wikipedia.org/wiki/Common_Vulnerability_Scoring_System) score higher than 5 is reached (CVSSv3 score is used here).
 * sets the *project name* to 'My Named Project'. This project name is displayed as a heading in the report.
@@ -181,7 +182,7 @@ This example:
 * saves the reports in all available formats
 * sets *OWASP Dependency Check* as project name
 * saves the reports to the folder *report*
-* takes dependency-check-suppression.xml to suppress false positives
+* takes dependency-check-suppression.xml to suppress false positives (also see section [false positives](#false positives))
 * lets the pipeline fail when a CVSS score higher than 5 is reached
 * exludes the folders matching the *pathPattern* from the scan
 
