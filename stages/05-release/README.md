@@ -9,7 +9,10 @@ The production ready artefact is promoted to the production environment.
 ## Steps
 
 1. deployment to production environment
+    * [deployment strategyes](https://docs.openshift.com/container-platform/3.3/dev_guide/deployments/deployment_strategies.html)
 2. automated smoke tests
+
+    non-exhaustive tests to ensure that the most important functions work
 
 ## Stage Output
 
