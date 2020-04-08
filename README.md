@@ -34,8 +34,6 @@ The pipeline consists of multiple stages. Stages are executed sequentially and d
 
     This optional stage is used to test borderline cases which can not accomplished with automated tests.
 
-QUESTION: Integrate autonated test and maunal test stages into one "System and Acceptance testing"?
-
 5. [release](stages/05-release/README.md)
 
     The Application is promoted to the production environment.
