@@ -29,7 +29,7 @@ It is a good practice to use a combination of several tools.
 ### Frontend SCA
 
 * JavaScript: [ESLint with «Airbnb JavaScript Style Guide»-based rules](https://github.com/puzzle/frontend-guides/blob/master/doc/03_javascript.md)
-* TypeScript: [TSLint mit «Airbnb JavaScript Style Guide»-based rules](https://github.com/puzzle/frontend-guides/blob/master/doc/03_typescript.md)
+* TypeScript: [TSLint mit «Airbnb JavaScript Style Guide»-based rules](https://github.com/puzzle/frontend-guides/blob/master/doc/04_typescript.md)
 
 ## Static Application Security Testing (SAST)
 

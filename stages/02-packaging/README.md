@@ -4,7 +4,7 @@
 
 ![Packaging Stage](images/packaging.svg)
 
-This stage contains packages the application for the deployment.
+In this stage the application is packaged for deployment and tested as a whole.
 
 ## Steps
 
@@ -20,7 +20,7 @@ More details and tool suggestions: [packaging.md](packaging.md)
 
 ### component tests
 
-The application has to run production-like to be tested.
+The goal is to check that all the units of the application work together as expected. External resurces are symulated/mocked (e.g. in-memory data base).
 
 * run component tests
 

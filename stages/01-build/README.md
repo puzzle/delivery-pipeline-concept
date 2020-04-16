@@ -4,8 +4,9 @@
 
 ![Build Stage](images/build.svg)
 
-This stage contains the classic application build.
-It is enriched with further analysis and checks.
+This stage contains the classic application build as well as any checks on the code in isolation (unit testing, static code analysis).
+
+The goal of the test/checks in this stage is to make sure that each unit of code performs correctly. Buisness logic shoud - if possible - be checked in this stage.
 
 ## Steps
 
