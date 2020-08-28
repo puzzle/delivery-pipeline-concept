@@ -22,4 +22,4 @@ Changes made for the container (Images itself or self installed stuff) has to pa
   * this will reduce the numbers of layers
   * this will reduce the size of the Docker Image
 * [Docker best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
-* [OpenShift image creation best practices](https://docs.openshift.com/container-platform/4.2/openshift_images/create-images.html)
+* [OpenShift image creation best practices](https://docs.openshift.com/container-platform/latest/openshift_images/create-images.html)

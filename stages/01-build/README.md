@@ -64,7 +64,7 @@ More details and tool suggestions: [security-checks.md](security-checks.md)
 
 ### artefact generation
 
-Packaging of the artefact.
+Generation of the application artefact.
 
 ## Stage Output
 
