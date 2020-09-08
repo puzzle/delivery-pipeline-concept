@@ -1,11 +1,11 @@
-# static analysis
+# Static Analysis
 
 Static code analysis (SCA) checks the software source code for
 
-* potential and obvious errors
-* code smells
+* potential and obvious errors, and
+* code smells.
 
-## static code analysis
+## Static Code Analysis
 
 It is a good practice to use a combination of several tools.
 

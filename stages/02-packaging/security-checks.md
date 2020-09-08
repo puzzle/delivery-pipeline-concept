@@ -1,6 +1,6 @@
-# security checks
+# Security Checks
 
-Security testing of the application artefact to be deployed.
+Security testing of the application artifact to be deployed.
 
 ## Docker Container
 

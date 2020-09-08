@@ -13,12 +13,10 @@ This optional stage is used to test borderline cases which can not accomplished 
 
     non-exhaustive tests to ensure that the most important functions work
 
-3. manual tests
-
 ## Stage Output
 
-Passing this step means that the deployable artefact from the [packaging stage](../02-packaging/README.md) is ready to deployed to production.
+Passing this step means that the deployable artifact from the [packaging stage](../02-packaging/README.md) is ready to deployed to production.
 
 The output will be:
 
-* test report
+* Test report

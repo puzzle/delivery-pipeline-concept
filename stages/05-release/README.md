@@ -1,6 +1,6 @@
-# release
+# Release
 
-The production ready artefact is promoted to the production environment.
+The production-ready artifact is promoted to the production environment.
 
 ## Overview
 
@@ -8,12 +8,12 @@ The production ready artefact is promoted to the production environment.
 
 ## Steps
 
-1. deployment to production environment
-    * [deployment strategyes](https://docs.openshift.com/container-platform/latest/applications/deployments/deployment-strategies.html)
-2. automated smoke tests
+1. Deployment to production environment
+    * [deployment strategies](https://docs.openshift.com/container-platform/latest/applications/deployments/deployment-strategies.html)
+2. Automated smoke tests
 
-    non-exhaustive tests to ensure that the most important functions work
+    Non-exhaustive tests ensuring the most important functionality
 
 ## Stage Output
 
-The artefact from the [packaging stage](../02-packaging/README.md) runs on production.
+The artifact from the [packaging stage](../02-packaging/README.md) runs on production.

@@ -20,7 +20,7 @@ More details and tool suggestions: [packaging.md](packaging.md)
 
 ### component tests
 
-The goal is to check that all the units of the application work together as expected. External resurces are symulated/mocked (e.g. in-memory data base).
+The goal is to check that all the units of the application work together as expected. External resurces are simulated/mocked (e.g. with an in-memory database).
 
 * run component tests
 
@@ -28,9 +28,9 @@ Testing guidelines: [test pyramid](../../best-practices.md#testing)
 
 ### security checks
 
-Security scan of the deployable artefact.
+Security scan of the deployable artifact.
 
-This mostly only applies for Docker Container.
+This mostly only applies to Docker containers.
 
 More details and tool suggestions: [security-checks.md](security-checks.md)
 
