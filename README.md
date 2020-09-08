@@ -4,7 +4,7 @@ Conceptual description of a Delivery Pipeline.
 
 Includes patterns and best practices.
 
-## What is a delivery pipeline
+## What Is a Delivery Pipeline
 
 The goal of CI/CD is to enable a constant flow of software updates into production to quicken release cycles and reduce the risks associated with development.
 
@@ -18,23 +18,23 @@ A CI/CD pipeline achieves this by automating the steps between checking code int
 
 The pipeline consists of multiple stages. Stages are executed sequentially and depend on the previous stages successful completion. Each stage contains individual tasks (steps) which may run in parallel.
 
-1. [build and unit tests](stages/01-build/README.md)
+1. [Build and Unit Tests](stages/01-build/README.md)
 
     This stage contains the classic application build as well as any checks on the code in isolation (unit testing, static code analysis).
 
-2. [packaging](stages/02-packaging/README.md)
+2. [Packaging](stages/02-packaging/README.md)
 
     In this stage the application is packaged for deployment and tested as a whole.
 
-3. [automated tests](stages/03-automated-tests/README.md)
+3. [Automated Tests](stages/03-automated-tests/README.md)
 
     The application is deployed to a test environment and thoroughly inspected using automated tesing.
 
-4. [manual tests](stages/04-manual-tests/README.md)
+4. [Manual Tests](stages/04-manual-tests/README.md)
 
     This optional stage is used to test borderline cases which can not accomplished with automated tests.
 
-5. [release](stages/05-release/README.md)
+5. [Release](stages/05-release/README.md)
 
     The Application is promoted to the production environment.
 
@@ -42,14 +42,14 @@ Each stage provides feedback to the developers in the form of logs and test repo
 
 If a stage fails - ether through an unrecoverable error (e.g. build failure) or too many tests / checks failing - the pipeline is halted. Developers have to fix the problems in the source and start the pipeline from the start.
 
-The pipeline can be triggered on commit, scheduled, or manually. Generally we want to push as many artifacts as far down the pipeline as possible. However, advanced tests are resource expensive so we have to make a tradeoff. For example we could trigger staged 1 & 2 on every commit and 3 & 4 only on a weekly schedule or certain branches.
+The pipeline can be triggered on commit, scheduled, or manually. Generally we want to push as many artifacts as far down the pipeline as possible. However, advanced tests are resource expensive so we have to make a trade-off. For example we could trigger staged 1 & 2 on every commit and 3 & 4 only on a weekly schedule or certain branches.
 
 ## Additional
 
-* [best practices](best-practices.md)
+* [Best Practices](best-practices.md)
 * [Glossary](glossary.md)
 
-## open points
+## Open Points
 
 * monitoring integration
 * pipeline status
@@ -59,9 +59,9 @@ The pipeline can be triggered on commit, scheduled, or manually. Generally we wa
   * config itself
   * credentials
 
-## About this repository
+## About This Repository
 
-### images
+### Images
 
 The images are created by [draw.io](https://www.draw.io/)
 

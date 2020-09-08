@@ -8,17 +8,17 @@ The application is deployed to a test environment and thoroughly inspected using
 
 ## Steps
 
-1. deployment to test environment
-2. integration tests
-3. automated acceptance tests
-4. system tests
-5. e2e tests
-6. [WAF](https://en.wikipedia.org/wiki/Application_firewall) tests
+1. Deployment to test environment
+2. Integration tests
+3. Automated acceptance tests (UAT)
+4. System tests
+5. End to end (E2E) tests
+6. [Web Application Firewall](https://en.wikipedia.org/wiki/Application_firewall) (WAF) tests
 
 ## Stage Output
 
-Passing this step means that the deployable artefact from the [packaging stage](../02-packaging/README.md) is ready to be tested from a tester.
+Passing this step means that the deployable artifact from the [packaging stage](../02-packaging/README.md) is ready to be tested from a tester.
 
 The output will be:
 
-* test results
+* Test results

@@ -1,4 +1,4 @@
-# build and unit tests
+# Build and Unit Tests
 
 ## Overview
 
@@ -10,65 +10,68 @@ The goal of the test/checks in this stage is to make sure that each unit of code
 
 ## Steps
 
-1. [code compilation and build](#code-compilation-and-build)
-2. [unit tests](#unit-tests)
-3. [static analysis](#static-analysis)
-4. [dependency checks](#dependency-checks)
-5. [security checks](#security-checks)
-6. [artefact generation](#artefact-generation)
+1. [Code Compilation and Build](#code-compilation-and-build)
+2. [Unit Tests](#unit-tests)
+3. [Static Analysis](#static-analysis)
+4. [Dependency Checks](#dependency-checks)
+5. [Security Checks](#security-checks)
+6. [Artifact Generation](#artifact-generation)
 
-### code compilation and build
+### Code Compilation and Build
 
-* build the code
+* Build the code.
 
 Any build failure must stop the pipeline. This to provide fast feedback.
 
 More details and tool suggestions: [build.md](build.md)
 
-### unit tests
+### Unit Tests
 
-* run all unit tests
-* collect test results
-* collect test coverage
+The unit test stage should: 
 
-Failing unit tests will not stop the execution of the step.
-This to collect the test results of all tests at the end of the step.
-Any non passing test must change the status of this step to unstable.
+* run all unit tests,
+* collect test results, and
+* collect test coverage.
+
+Failing unit tests will not stop the execution of the step to ensure proper collection of the results of all tests at the end of the step.
+Any non-passing test must change the status of this step to unstable.
 
 Stop the pipeline if the step status returns unstable (failing unit tests).
 
 Testing guidelines: [test pyramid](../../best-practices.md#testing)
 
-### static analysis
+### Static Analysis
 
-Static code analysis (SCA) of the software source code.
+The static analysis step consists of:
 
-* static code analysis
-* Static Application Security Testing (SAST)
+* static Code Analysis (SCA), and 
+* static Application Security Testing (SAST).
 
 More details and tool suggestions: [static-analysis.md](static-analysis.md)
 
-### dependency checks
+### Dependency Checks
 
-* check dependencies for updates
-* check dependencies for security problems
-* license checks
+This pipeline step consists of:
+
+* checking dependencies for updates,
+* checking dependencies for security problems, and
+* checking licenses.
 
 More details and tool suggestions: [dependency-checks.md](dependency-checks.md)
 
-### security checks
+### Security Checks
 
 * Dynamic Application Security Testing (DAST)
 
 More details and tool suggestions: [security-checks.md](security-checks.md)
 
-### artefact generation
+### Artifact Generation
 
-Generation of the application artefact.
+Generation of the application artifact.
 
 ## Stage Output
 
 The output will be:
 
-* application artifacts
+* application artifacts, and
 * test results

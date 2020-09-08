@@ -1,10 +1,10 @@
-# best practices
+# Best Practices
 
-## step execution
+## Step Execution
 
-* run as many steps in parallel as possible
+Run as many steps in parallel as possible.
 
-## testing
+## Testing
 
 Division of the test cases: test pyramid
 
@@ -16,7 +16,7 @@ Image from [Le Blog des Octos](https://blog.octo.com/en/the-test-pyramid-in-prac
 
 ### Container Build
 
-Changes made for the container (Images itself or self installed stuff) has to pass the same pipeline as the application code itself.
+Changes made for the container (images themselves or manually installed software) have to pass the same pipeline as the application code itself.
 
 * limit number of commands / lines inside the Dockerfile
   * this will reduce the numbers of layers

@@ -1,4 +1,4 @@
-# security checks
+# Security Checks
 
 Check the code for security issues.
 
