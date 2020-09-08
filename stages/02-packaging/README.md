@@ -14,13 +14,13 @@ The steps are:
 2. component tests, and
 3. security checks
 
-### packaging
+### Packaging
 
 When deploying to a Container Plattform, this step includes a container build.
 
 More details and tool suggestions: [packaging.md](packaging.md)
 
-### component tests
+### Component Tests
 
 The goal is to check that all the units of the application work together as expected. External resurces are simulated/mocked (e.g. with an in-memory database).
 
@@ -28,7 +28,7 @@ The goal is to check that all the units of the application work together as expe
 
 Testing guidelines: [test pyramid](../../best-practices.md#testing)
 
-### security checks
+### Security Checks
 
 Security scan of the deployable artifact.
 
