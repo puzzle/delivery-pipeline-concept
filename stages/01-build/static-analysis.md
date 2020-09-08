@@ -39,4 +39,4 @@ It is a good practice to use a combination of several tools.
 
 ### Ruby SAST
 
-* [Brakeman](http://brakemanscanner.org/) finding security issues in Rails applications
+* [Brakeman](http://brakemanscanner.org/) finds security issues in Rails applications.

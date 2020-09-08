@@ -4,7 +4,7 @@ Conceptual description of a Delivery Pipeline.
 
 Includes patterns and best practices.
 
-## What is a delivery pipeline
+## What Is a Delivery Pipeline
 
 The goal of CI/CD is to enable a constant flow of software updates into production to quicken release cycles and reduce the risks associated with development.
 
@@ -42,14 +42,14 @@ Each stage provides feedback to the developers in the form of logs and test repo
 
 If a stage fails - ether through an unrecoverable error (e.g. build failure) or too many tests / checks failing - the pipeline is halted. Developers have to fix the problems in the source and start the pipeline from the start.
 
-The pipeline can be triggered on commit, scheduled, or manually. Generally we want to push as many artifacts as far down the pipeline as possible. However, advanced tests are resource expensive so we have to make a tradeoff. For example we could trigger staged 1 & 2 on every commit and 3 & 4 only on a weekly schedule or certain branches.
+The pipeline can be triggered on commit, scheduled, or manually. Generally we want to push as many artifacts as far down the pipeline as possible. However, advanced tests are resource expensive so we have to make a trade-off. For example we could trigger staged 1 & 2 on every commit and 3 & 4 only on a weekly schedule or certain branches.
 
 ## Additional
 
-* [best practices](best-practices.md)
+* [Best Practices](best-practices.md)
 * [Glossary](glossary.md)
 
-## open points
+## Open Points
 
 * monitoring integration
 * pipeline status
@@ -59,9 +59,9 @@ The pipeline can be triggered on commit, scheduled, or manually. Generally we wa
   * config itself
   * credentials
 
-## About this repository
+## About This Repository
 
-### images
+### Images
 
 The images are created by [draw.io](https://www.draw.io/)
 
