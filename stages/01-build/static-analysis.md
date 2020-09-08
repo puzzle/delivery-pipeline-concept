@@ -28,8 +28,9 @@ It is a good practice to use a combination of several tools.
 
 ### Frontend SCA
 
-* JavaScript: [ESLint with «Airbnb JavaScript Style Guide»-based rules](https://github.com/puzzle/frontend-guides/blob/master/doc/03_javascript.md)
-* TypeScript: [TSLint mit «Airbnb JavaScript Style Guide»-based rules](https://github.com/puzzle/frontend-guides/blob/master/doc/04_typescript.md)
+* JavaScript: [ESLint](https://eslint.org/)
+* TypeScript: [ESLint](https://eslint.org/) with [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) (previously [TSLint](https://medium.com/palantir/tslint-in-2019-1a144c2317a9))
+  * Specifically Angular: Currently still [TSLint](https://angular.io/cli/lint), see [Angular Roadmap](https://angular.io/guide/roadmap#migration-to-eslint)
 
 ## Static Application Security Testing (SAST)
 
