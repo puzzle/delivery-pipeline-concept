@@ -4,7 +4,7 @@ Security testing of the application artifact to be deployed.
 
 ## Docker Container
 
-Tools for the analysis and inspection of vulnerabilities in Docker containers:
+Tools for the analysis and inspection of Docker containers for vulnerabilities:
 
 * [Anchore](https://github.com/anchore/anchore-engine) 
 * [Clair](https://github.com/quay/clair)
