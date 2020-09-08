@@ -8,8 +8,10 @@ In this stage the application is packaged for deployment and tested as a whole.
 
 ## Steps
 
-1. packaging
-2. component tests
+The steps are: 
+
+1. packaging,
+2. component tests, and
 3. security checks
 
 ### packaging
@@ -32,12 +34,11 @@ Security scan of the deployable artifact.
 
 This mostly only applies to Docker containers.
 
-More details and tool suggestions: [security-checks.md](security-checks.md)
+More details and suggestions for tools: [security-checks.md](security-checks.md)
 
 ## Stage Output
 
 The output will be:
 
-* deployable artefact of the application
-  * e.g application container image
-* test results
+* a deployable artifact of the application (e.g application container image), and
+* test results.

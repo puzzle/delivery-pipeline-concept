@@ -6,10 +6,13 @@ Packaging of the application artifact to be deployed.
 
 ### Container Build
 
-* take newest Baseimage for your Container
+To build the container:
+
+* take newest Baseimage for your Container,
 * run software and library updates
-* only install really needed software and libraries for running the application
-* Container build best practices: [Container Build](../../best-practices.md#container-build)
+* only install really needed software and libraries for running the application.
+
+Container build best practices: [Container Build](../../best-practices.md#container-build)
 
 ### Hardening the container
 

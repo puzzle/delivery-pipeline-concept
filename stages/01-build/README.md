@@ -27,13 +27,14 @@ More details and tool suggestions: [build.md](build.md)
 
 ### Unit Tests
 
-* run all unit tests
-* collect test results
-* collect test coverage
+The unit test stage should: 
 
-Failing unit tests will not stop the execution of the step.
-This to collect the test results of all tests at the end of the step.
-Any non passing test must change the status of this step to unstable.
+* run all unit tests,
+* collect test results, and
+* collect test coverage.
+
+Failing unit tests will not stop the execution of the step to ensure proper collection of the results of all tests at the end of the step.
+Any non-passing test must change the status of this step to unstable.
 
 Stop the pipeline if the step status returns unstable (failing unit tests).
 
@@ -41,18 +42,20 @@ Testing guidelines: [test pyramid](../../best-practices.md#testing)
 
 ### Static Analysis
 
-Static code analysis (SCA) of the software source code.
+The static analysis step consists of:
 
-* static code analysis
-* Static Application Security Testing (SAST)
+* static Code Analysis (SCA), and 
+* static Application Security Testing (SAST).
 
 More details and tool suggestions: [static-analysis.md](static-analysis.md)
 
-### dependency checks
+### Dependency Checks
 
-* check dependencies for updates
-* check dependencies for security problems
-* license checks
+This pipeline step consists of:
+
+* checking dependencies for updates,
+* checking dependencies for security problems, and
+* checking licenses.
 
 More details and tool suggestions: [dependency-checks.md](dependency-checks.md)
 
@@ -64,11 +67,11 @@ More details and tool suggestions: [security-checks.md](security-checks.md)
 
 ### Artifact Generation
 
-Generation of the application artefact.
+Generation of the application artifact.
 
 ## Stage Output
 
 The output will be:
 
-* application artifacts
+* application artifacts, and
 * test results

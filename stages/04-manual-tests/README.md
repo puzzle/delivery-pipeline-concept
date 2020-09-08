@@ -8,10 +8,9 @@ This optional stage is used to test borderline cases which can not accomplished 
 
 ## Steps
 
-1. deployment to [uat](https://en.wikipedia.org/wiki/Acceptance_testing) test environment
-2. automated smoke tests
-
-    non-exhaustive tests to ensure that the most important functions work
+1. Deployment to [User Acceptance Testing](https://en.wikipedia.org/wiki/Acceptance_testing) (UAT) environment
+2. Automated smoke tests (non-exhaustive tests to ensure correct behaviour of critical functionality)
+3. Manual tests
 
 ## Stage Output
 

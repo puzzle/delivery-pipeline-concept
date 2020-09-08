@@ -4,17 +4,14 @@ Security testing of the application artifact to be deployed.
 
 ## Docker Container
 
-* Container Security Scan
-  * [Anchore](https://github.com/anchore/anchore-engine)
-  * [Clair](https://github.com/quay/clair)
+Tools for the analysis and inspection of vulnerabilities in Docker containers:
 
-### security vulnerabilities found
+* [Anchore](https://github.com/anchore/anchore-engine) 
+* [Clair](https://github.com/quay/clair)
 
-First quantify the problems.
+### What to Do in Case of Found Security Vulnerabilities?
 
-What happens, when the security problem threshold is passed?
+Quantify the problems, and if the security problem threshold is passed:
 
-Two possible solutions:
-
-* the pipeline stopps with an error
-* the pipeline creates a task in the backlog
+* stop the pipeline with an error, or
+* let the pipeline create a task in the backlog.
