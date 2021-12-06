@@ -242,7 +242,7 @@
         <xhtml:div
            style="display: inline-block; font-size: 16px; font-family: Roboto; color: rgb(255, 255, 255); line-height: 1.2; vertical-align: top; width: 74px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
           <xhtml:div
-             style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">Performance tests</xhtml:div>
+             style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">performance tests</xhtml:div>
         </xhtml:div>
       </foreignObject>
       <text
@@ -250,7 +250,7 @@
          id="text46"
          font-size="16px"
          y="17"
-         x="36">Performance tests</text>
+         x="36">performance tests</text>
     </switch>
   </g>
   <rect
