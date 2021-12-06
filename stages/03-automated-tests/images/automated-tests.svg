@@ -242,7 +242,7 @@
         <xhtml:div
            style="display: inline-block; font-size: 16px; font-family: Roboto; color: rgb(255, 255, 255); line-height: 1.2; vertical-align: top; width: 74px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
           <xhtml:div
-             style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">WAF tests</xhtml:div>
+             style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">Performance tests</xhtml:div>
         </xhtml:div>
       </foreignObject>
       <text
