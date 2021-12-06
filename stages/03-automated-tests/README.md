@@ -12,8 +12,9 @@ The application is deployed to a test environment and thoroughly inspected using
 2. Integration tests
 3. Automated acceptance tests (UAT)
 4. System tests
-5. End to end (E2E) tests
-6. [Web Application Firewall](https://en.wikipedia.org/wiki/Application_firewall) (WAF) tests
+5. Performance tests
+6. End to end (E2E) tests
+7. [Web Application Firewall](https://en.wikipedia.org/wiki/Application_firewall) (WAF) tests
 
 ## Stage Output
 
