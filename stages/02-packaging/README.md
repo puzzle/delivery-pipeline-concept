@@ -8,7 +8,7 @@ In this stage the application is packaged for deployment and tested as a whole.
 
 ## Steps
 
-The steps are: 
+The steps are:
 
 1. packaging,
 2. component tests, and

@@ -6,7 +6,7 @@
 
 This stage contains the classic application build as well as any checks on the code in isolation (unit testing, static code analysis).
 
-The goal of the test/checks in this stage is to make sure that each unit of code performs correctly. Buisness logic shoud - if possible - be checked in this stage.
+The goal of the test/checks in this stage is to make sure that each unit of code performs correctly. Business logic should - if possible - be checked in this stage.
 
 ## Steps
 
@@ -14,8 +14,7 @@ The goal of the test/checks in this stage is to make sure that each unit of code
 2. [Unit Tests](#unit-tests)
 3. [Static Analysis](#static-analysis)
 4. [Dependency Checks](#dependency-checks)
-5. [Security Checks](#security-checks)
-6. [Artifact Generation](#artifact-generation)
+5. [Artifact Generation](#artifact-generation)
 
 ### Code Compilation and Build
 
@@ -27,7 +26,7 @@ More details and tool suggestions: [build.md](build.md)
 
 ### Unit Tests
 
-The unit test stage should: 
+The unit test stage should:
 
 * run all unit tests,
 * collect test results, and
@@ -44,7 +43,7 @@ Testing guidelines: [test pyramid](../../best-practices.md#testing)
 
 The static analysis step consists of:
 
-* static Code Analysis (SCA), and 
+* static Code Analysis (SCA), and
 * static Application Security Testing (SAST).
 
 More details and tool suggestions: [static-analysis.md](static-analysis.md)
