@@ -63,7 +63,7 @@ The pipeline can be triggered on commit, scheduled, or manually. Generally we wa
 
 ### Images
 
-The images are created by [draw.io](https://www.draw.io/)
+The images are created by [app.diagrams.net](https://app.diagrams.net/) (former draw.io)
 
 Editing:
 
