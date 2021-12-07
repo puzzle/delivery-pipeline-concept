@@ -2,7 +2,7 @@
 
 Packaging of the application artifact to be deployed.
 
-## Docker Container
+## Container
 
 ### Container Build
 

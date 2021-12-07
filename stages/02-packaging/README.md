@@ -32,7 +32,7 @@ Testing guidelines: [test pyramid](../../best-practices.md#testing)
 
 Security scan of the deployable artifact.
 
-This mostly only applies to Docker containers.
+This mostly only applies to container images.
 
 More details and suggestions for tools: [security-checks.md](security-checks.md)
 

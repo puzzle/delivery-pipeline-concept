@@ -20,6 +20,6 @@ Changes made for the container (images themselves or manually installed software
 
 * limit number of commands / lines inside the Dockerfile
   * this will reduce the numbers of layers
-  * this will reduce the size of the Docker Image
+  * this will reduce the size of the Container Image
 * [Docker best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 * [OpenShift image creation best practices](https://docs.openshift.com/container-platform/latest/openshift_images/create-images.html)
