@@ -14,8 +14,14 @@ The application is deployed to a test environment and thoroughly inspected using
 4. System tests
 5. Performance tests
 6. End to end (E2E) tests
-7. [Dynamic Application Security Testing](security-checks.md) (DAST)
-8. [Web Application Firewall](https://en.wikipedia.org/wiki/Application_firewall) (WAF) tests
+7. [Security tests](#security-tests)
+
+### Security Tests
+
+* Dynamic Application Security Testing (DAST)
+* Web Application Firewall (WAF) tests
+
+More details and tool suggestions: [security-checks.md](security-checks.md)
 
 ## Stage Output
 
