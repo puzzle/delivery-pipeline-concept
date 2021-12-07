@@ -59,12 +59,6 @@ This pipeline step consists of:
 
 More details and tool suggestions: [dependency-checks.md](dependency-checks.md)
 
-### Security Checks
-
-* Dynamic Application Security Testing (DAST)
-
-More details and tool suggestions: [security-checks.md](security-checks.md)
-
 ### Artifact Generation
 
 Generation of the application artifact.
