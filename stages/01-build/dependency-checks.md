@@ -25,7 +25,7 @@ We use the OWASP Dependency Check tool:
 
 Quantify the problems and when the security problem threshold is passed, there are two possible solutions:
 
-* The pipeline stops with an error, or 
+* The pipeline stops with an error, or
 * the pipeline creates a task in the backlog of the developer.
 
 ### False Positives
@@ -146,7 +146,6 @@ pipeline {
 </p>
 </details>
 
-
 ### Dependency Check Examples
 
 #### Shared Library Examples
@@ -179,7 +178,7 @@ This example:
 * saves the reports to the folder *report*,
 * takes dependency-check-suppression.xml to suppress false positives (also see section [false positives](#false positives)),
 * lets the pipeline fail when a CVSS score higher than 5 is reached, and
-* exludes the folders matching the *pathPattern* from the scan.
+* excludes the folders matching the *pathPattern* from the scan.
 
 For more information about command line arguments, see [OWASP Dependency Check documentation section "Command Line Arguments"](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html).
 

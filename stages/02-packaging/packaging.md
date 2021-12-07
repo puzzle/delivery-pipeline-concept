@@ -2,13 +2,13 @@
 
 Packaging of the application artifact to be deployed.
 
-## Docker Container
+## Container
 
 ### Container Build
 
 To build the container:
 
-* take newest Baseimage for your Container,
+* take newest base-image for your Container,
 * run software and library updates, and
 * install (only) required software and libraries for running the application.
 
