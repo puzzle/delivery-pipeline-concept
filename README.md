@@ -28,7 +28,7 @@ The pipeline consists of multiple stages. Stages are executed sequentially and d
 
 3. [Automated Tests](stages/03-automated-tests/README.md)
 
-    The application is deployed to a test environment and thoroughly inspected using automated tesing.
+    The application is deployed to a test environment and thoroughly inspected using automated testing.
 
 4. [Manual Tests](stages/04-manual-tests/README.md)
 
@@ -42,7 +42,7 @@ Each stage provides feedback to the developers in the form of logs and test repo
 
 If a stage fails - ether through an unrecoverable error (e.g. build failure) or too many tests / checks failing - the pipeline is halted. Developers have to fix the problems in the source and start the pipeline from the start.
 
-The pipeline can be triggered on commit, scheduled, or manually. Generally we want to push as many artifacts as far down the pipeline as possible. However, advanced tests are resource expensive so we have to make a trade-off. For example we could trigger staged 1 & 2 on every commit and 3 & 4 only on a weekly schedule or certain branches.
+The pipeline can be triggered on commit, scheduled, or manually. Generally we want to push as many artifacts as far down the pipeline as possible. However, advanced tests are resource expensive, so we have to make a trade-off. For example, we could trigger stages 1 & 2 on every commit and 3 & 4 only on a weekly schedule or certain branches.
 
 ## Additional
 

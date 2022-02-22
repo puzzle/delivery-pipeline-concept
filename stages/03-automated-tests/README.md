@@ -1,6 +1,6 @@
 # automated tests
 
-The application is deployed to a test environment and thoroughly inspected using automated tesing. This is the first time the application will be deployed into an environment with connectivity to other components.
+The application is deployed to a test environment and thoroughly inspected using automated testing. This is the first time the application will be deployed into an environment with connectivity to other components.
 
 ## Overview
 

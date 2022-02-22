@@ -22,7 +22,7 @@ More details and tool suggestions: [packaging.md](packaging.md)
 
 ### Component Tests
 
-The goal is to check that all the units of the application work together as expected. External resurces are simulated/mocked (e.g. with an in-memory database).
+The goal is to check that all the units of the application work together as expected. External resources are simulated/mocked (e.g. with an in-memory database).
 
 * run component tests
 
@@ -40,5 +40,5 @@ More details and suggestions for tools: [security-checks.md](security-checks.md)
 
 The output will be:
 
-* a deployable artifact of the application (e.g application container image), and
+* a deployable artifact of the application (e.g. application container image), and
 * test results.
