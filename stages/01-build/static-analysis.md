@@ -16,7 +16,7 @@ It is a good practice to use a combination of several tools.
 * [Checkstyle](http://checkstyle.sourceforge.net/) finds various problems in the source code.
 * [PMD](http://pmd.sourceforge.net/) finds various problems in the source code.
 * [JDepend](http://www.clarkware.com/software/JDepend.html) finds cyclic dependencies
-* [Classcycle](http://classycle.sourceforge.net/) finds cyclic dependencies
+* [Classycle](http://classycle.sourceforge.net/) finds cyclic dependencies
 
 ### Ruby SCA
 
