@@ -3,7 +3,7 @@
 Static code analysis (SCA) checks the software source code for
 
 * potential and obvious errors, and
-* code smells.
+* [code smells](https://en.wikipedia.org/wiki/Code_smell).
 
 ## Static Code Analysis
 
