@@ -4,12 +4,12 @@
 
 Check the application for security issues.
 
-* [OWASP ZAP (Zed Attack Proxy)](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
+* [OWASP ZAP (Zed Attack Proxy)](https://www.zaproxy.org/)
 
 ## Web Application Firewall (WAF) Tests
 
-If an application is protected by a [Web Application Firewall](https://en.wikipedia.org/wiki/Application_firewall) (WAF)
-it's call's should not be blocked. Best is to run the same tests with and without the WAF enabled.
+If an application is protected by a [Web Application Firewall](https://en.wikipedia.org/wiki/Application_firewall) (WAF),
+its calls should not be blocked. Best is to run the same tests with and without the WAF enabled.
 
 More information:
 
