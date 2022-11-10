@@ -20,23 +20,23 @@ The pipeline consists of multiple stages. Stages are executed sequentially and d
 
 1. [Build and Unit Tests](stages/01-build/README.md)
 
-    This stage contains the classic application build as well as any checks on the code in isolation (unit testing, static code analysis).
+   This stage contains the classic application build as well as any checks on the code in isolation (unit testing, static code analysis).
 
 2. [Packaging](stages/02-packaging/README.md)
 
-    In this stage the application is packaged for deployment and tested as a whole.
+   In this stage the application is packaged for deployment and tested as a whole.
 
 3. [Automated Tests](stages/03-automated-tests/README.md)
 
-    The application is deployed to a test environment and thoroughly inspected using automated testing.
+   The application is deployed to a test environment and thoroughly inspected using automated testing.
 
 4. [Manual Tests](stages/04-manual-tests/README.md)
 
-    This optional stage is used to test borderline cases which can not accomplished with automated tests.
+   This optional stage is used to test borderline cases which can not accomplished with automated tests.
 
 5. [Release](stages/05-release/README.md)
 
-    The Application is promoted to the production environment.
+   The Application is promoted to the production environment.
 
 Each stage provides feedback to the developers in the form of logs and test reports. The scope of the test becomes wider / more integrated with every stage.
 
@@ -44,20 +44,26 @@ If a stage fails - either through an unrecoverable error (e.g. build failure) or
 
 The pipeline can be triggered on commit, scheduled, or manually. Generally, we want to push as many artifacts as far down the pipeline as possible. However, advanced tests are resource expensive, so we have to make a trade-off. For example, we could trigger stages 1 & 2 on every commit and 3 & 4 only on a weekly schedule or certain branches.
 
+## Planning of a Pipeline
+
+- how to decide what software to use (?)
+- different tests
+- [deployment pattern structures](deployment-pattern.md)
+
 ## Additional
 
-* [Best Practices](best-practices.md)
-* [Glossary](glossary.md)
+- [Best Practices](best-practices.md)
+- [Glossary](glossary.md)
 
 ## Open Points
 
-* monitoring integration
-* pipeline status
-* container security
-* list technologies used in a container (baseimage and self installed)
-* environment config
-  * config itself
-  * credentials
+- monitoring integration
+- pipeline status
+- container security
+- list technologies used in a container (baseimage and self installed)
+- environment config
+  - config itself
+  - credentials
 
 ## About This Repository
 
@@ -67,10 +73,10 @@ The images are created by [app.diagrams.net](https://app.diagrams.net/) (former 
 
 Editing:
 
-* The diagram is included in the image.
-* Just load the image into draw.io.
+- The diagram is included in the image.
+- Just load the image into draw.io.
 
 Export:
 
-* check *Transparent Background*
-* check *Include a copy of my diagram*
+- check _Transparent Background_
+- check _Include a copy of my diagram_
