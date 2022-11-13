@@ -68,5 +68,7 @@ The full approval pattern takes the semi approval pattern and adds a manual appr
 
 ### GitOps
 
-In this deployment pattern the desired configuration is stored in a config(uration) file on a version control system, such as Git. Changes can be implement via pull reguests, , code reviews or merges to master. This system represents the fastest pattern to implement changes.
-Therefore, it is perfect for environments, which require a high rate of change. Such as testing environments.
+In this deployment pattern the desired configuration is stored in a config(uration) file on a version control system, such as Git. Changes can be implement via pull requests, code reviews or merges to master. This system represents the fastest pattern to implement changes.
+Therefore, it is perfect for environments, which require a high rate of change, such as a testing environment.
+
+However, the main focus of GitOps is infrastructure automation and continuous deployment/delivery.
