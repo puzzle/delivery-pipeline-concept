@@ -17,7 +17,7 @@ Things to consider when designing a modern deployment pipeline:
 - Approvals
 - Maintaining SLA, SLO, SLI
 
-Important factors driving the implementation of CICD:
+Important factors driving the implementation of CI/CD:
 
 - Environments (increase of deployments to multiple environments and locations [Example of how to Setup a Multi-Environment CI/CD Pipeline on AWS](https://www.phdata.io/blog/setting-up-multi-environments-cicd-pipelines-on-aws/))
 - Tests (the automation of several different tests)
@@ -59,7 +59,7 @@ This pattern often incorporates separate pipelines throughout pre-production and
 
 ### Semi Approval
 
-This pattern is often found in organizations with igh-risk changes, such as financial services.
+This pattern is often found in organizations with high-risk changes, such as financial services.
 It is a mix of automation, where possible and human approval, where necessary.
 
 ### Full Approval Pattern
