@@ -18,6 +18,9 @@ The goal of the test/checks in this stage is to make sure that each unit of code
 
 ### Code Compilation and Build
 
+* Security and Compliance
+  * Check source signature
+  * Verify source
 * Build the code.
 
 Any build failure must stop the pipeline. This to provide fast feedback.
@@ -60,7 +63,8 @@ More details and tool suggestions: [dependency-checks.md](dependency-checks.md)
 
 ### Artifact Generation
 
-Generation of the application artifact.
+* Generation of the application artifact.
+* Signing of the source code
 
 ## Stage Output
 
