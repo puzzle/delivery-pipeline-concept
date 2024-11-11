@@ -8,12 +8,8 @@ The production-ready artifact is promoted to the production environment.
 
 ## Steps
 
-- [Release](#release)
-  - [Overview](#overview)
-  - [Steps](#steps)
-    - [Deployment to production environment](#deployment-to-production-environment)
-    - [Automated smoke tests](#automated-smoke-tests)
-  - [Stage Output](#stage-output)
+1. Deployment to production environment
+2. Automated smoke tests
 
 ### Deployment to production environment
 
