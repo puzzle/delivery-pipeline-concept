@@ -56,16 +56,6 @@ The pipeline can be triggered on commit, scheduled, or manually. Generally, we w
 - [Glossary](glossary.md)
 - Good additional description of [CI/CD](https://harness.io/blog/what-is-ci-cd) another [one](https://www.plutora.com/blog/understanding-ci-cd-pipeline)
 
-## Open Points
-
-- monitoring integration
-- pipeline status
-- container security
-- list technologies used in a container (baseimage and self installed)
-- environment config
-  - config itself
-  - credentials
-
 ## About This Repository
 
 ### Images
